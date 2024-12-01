@@ -1,67 +1,20 @@
-/* Basic reset and fonts */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+#title {
     text-align: center;
-  }
-  
-  main {
-    width: 80%;
     margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  header {
-    margin-bottom: 20px;
-  }
-  
-  h1#title {
-    color: #222;
-  }
-  
-  #img-div {
+}
+#img-div {
+    text-align: center;
     margin: 20px auto;
-  }
-  
-  #image {
+}
+
+#image {
     max-width: 100%;
+    display: block;
     height: auto;
-    border-radius: 10px;
-  }
-  
-  #img-caption {
-    font-style: italic;
-    margin-top: 5px;
-  }
-  
-  #tribute-info h2, h3 {
-    color: #444;
-    margin-top: 20px;
-  }
-  
-  ul {
-    text-align: left;
     margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    width: 60%;
-  }
-  
-  ul li {
-    margin: 10px 0;
-    padding: 10px;
-    background: #e9ecef;
-    border-radius: 5px;
-  }
-  
-  ul li strong {
-    color: #007bff;
-  }
-  
+}
+
+#img-caption {
+    margin-top: 10px;
+    font-style: italic;
+}
