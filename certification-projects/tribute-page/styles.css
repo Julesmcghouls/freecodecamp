@@ -1,7 +1,43 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #0051ba;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Main content styling */
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
 #title {
     text-align: center;
     margin: 20px auto;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
+
+/* Center the main image and its caption */
 #img-div {
     text-align: center;
     margin: 20px auto;
@@ -17,4 +53,29 @@
 #img-caption {
     margin-top: 10px;
     font-style: italic;
+}
+
+/* Style the image row */
+.image-row {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers images evenly */
+    align-items: center; /* Vertically aligns images */
+    gap: 10px; /* Adds space between images */
+    margin: 20px auto;
+}
+
+/* Container for each image and its caption */
+.image-container {
+    position: relative; /* Enables positioning of the caption relative to the image */
+    width: 45%; /* Each image container takes up 45% of the row's width */
+    max-width: 100%;
+}
+
+/* Images */
+.image-container img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes inline spacing */
+    border: 2px solid #ccc; /* Optional: adds a border */
+    border
 }
