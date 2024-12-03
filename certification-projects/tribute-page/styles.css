@@ -1,7 +1,6 @@
-/* General page styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #0051ba, #f4f4f9);
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,16 +8,6 @@ body {
     align-items: center;
 }
 
-/* Header styling */
-header {
-    width: 100%;
-    background-color: #0051ba;
-    padding: 15px;
-    color: #fff;
-    text-align: center;
-}
-
-/* Main content styling */
 main {
     width: 80%;
     max-width: 1200px;
@@ -29,15 +18,14 @@ main {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Title styling */
 #title {
     text-align: center;
     margin: 20px auto;
-    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
+    font-size: 2.5rem;
 }
 
-/* Center the main image and its caption */
 #img-div {
     text-align: center;
     margin: 20px auto;
@@ -55,27 +43,63 @@ main {
     font-style: italic;
 }
 
-/* Style the image row */
 .image-row {
-    display: flex; /* Enables flexbox layout */
-    justify-content: center; /* Centers images evenly */
-    align-items: center; /* Vertically aligns images */
-    gap: 10px; /* Adds space between images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     margin: 20px auto;
 }
 
-/* Container for each image and its caption */
 .image-container {
-    position: relative; /* Enables positioning of the caption relative to the image */
-    width: 45%; /* Each image container takes up 45% of the row's width */
+    position: relative;
+    width: 45%;
     max-width: 100%;
 }
 
-/* Images */
 .image-container img {
     width: 100%;
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Removes inline spacing */
-    border: 2px solid #ccc; /* Optional: adds a border */
-    border
+    height: auto;
+    display: block;
+    border: 2px solid #ccc;
+}
+
+#image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#tribute-link:hover {
+    color: #d1a200;
+    text-decoration: underline;
+}
+
+#social-media .social-links {
+    text-align: center;
+}
+
+#social-media img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#social-media img:hover {
+    transform: scale(1.1);
+}
+#social-media .social-links a {
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+#social-media .social-links a:hover {
+    transform: scale(1.1);
+}
+
+#social-media {
+    text-align: center;
 }
