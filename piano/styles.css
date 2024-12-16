@@ -7,13 +7,14 @@ box-sizing: inherit;
 }
 
 #piano {
-background-color: #00471b;
+background-color: #8ACE00;
 width: 992px;
 height: 290px;
 margin: 80px auto;
 padding: 90px 20px 0 20px;
 position: relative;
 border-radius: 10px;
+overflow: hidden; /* Hides overflow content */
 }
 
 .keys {
@@ -45,9 +46,10 @@ border-radius: 0 0 3px 3px;
 }
 
 .logo {
-width: 200px;
 position: absolute;
-top: 23px;
+top: -50px;
+right: 79%;
+margin-right: -75px;
 }
 
 @media (max-width: 768px) {
@@ -68,6 +70,7 @@ top: 23px;
 #piano {
     width: 675px;
 }
+
 .keys {
     width: 633px;
 }
