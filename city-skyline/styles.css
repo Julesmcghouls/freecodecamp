@@ -292,7 +292,7 @@ var(--window-color3) 30%
 );
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
 :root {
     --building-color1: #000;
     --building-color2: #000;
@@ -314,3 +314,25 @@ background: radial-gradient(
     #223 100%
     );
 }
+
+/* @keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.7;
+    }
+    40% {
+        opacity: 0.9;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 1;
+    }
+}
+
+.bb1-window, .fb2-window, .bb4-window, .fb3-window, .fb4-window {
+    animation: flicker 3s infinite alternate;
+} */
