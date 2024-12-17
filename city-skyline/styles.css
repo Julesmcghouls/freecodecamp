@@ -292,7 +292,7 @@ var(--window-color3) 30%
 );
 }
 
-@media (max-width: 500px) {
+@media (max-width: 5000px) {
 :root {
     --building-color1: #000;
     --building-color2: #000;
