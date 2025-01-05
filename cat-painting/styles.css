@@ -1,299 +1,203 @@
 * {
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-background-color: #c9d2fc;
+    background-color: #c9d2fc;
 }
 
 .cat-head {
-position: absolute;
-right: 0;
-left: 0;
-top: 0;
-bottom: 0;
-margin: auto;
-background: linear-gradient(#5e5e5e 85%, #45454f 100%);
-width: 205px;
-height: 180px;
-border: 1px solid #000;
-border-radius: 46%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+    width: 205px;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 46%;
+}
+
+.cat-left-ear, .cat-right-ear {
+    position: absolute;
+    top: -26px;
+    z-index: 1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
 }
 
 .cat-left-ear {
-position: absolute;
-top: -26px;
-left: -31px;
-z-index: 1;
-border-top-left-radius: 90px;
-border-top-right-radius: 10px;
-transform: rotate(-45deg);
-border-left: 35px solid transparent;
-border-right: 35px solid transparent;
-border-bottom: 70px solid #5e5e5e;
+    left: -31px;
+    transform: rotate(-45deg);
 }
 
 .cat-right-ear {
-position: absolute;
-top: -26px;
-left: 163px;
-z-index: 1;
-transform: rotate(45deg);
-border-top-left-radius: 90px;
-border-top-right-radius: 10px;
-border-left: 35px solid transparent;
-border-right: 35px solid transparent;
-border-bottom: 70px solid #5e5e5e;
+    left: 163px;
+    transform: rotate(45deg);
 }
 
-.cat-left-inner-ear {
-position: absolute;
-top: 22px;
-left: -20px;
-border-top-left-radius: 90px;
-border-top-right-radius: 10px;
-border-bottom-right-radius: 40%;
-border-bottom-left-radius: 40%;
-border-left: 20px solid transparent;
-border-right: 20px solid transparent;
-border-bottom: 40px solid #3b3b4f;
+.cat-left-inner-ear, .cat-right-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
 }
 
-.cat-right-inner-ear {
-position: absolute;
-top: 22px;
-left: -20px;
-border-top-left-radius: 90px;
-border-top-right-radius: 10px;
-border-bottom-right-radius: 40%;
-border-bottom-left-radius: 40%;
-border-left: 20px solid transparent;
-border-right: 20px solid transparent;
-border-bottom: 40px solid #3b3b4f;
+.cat-left-eye, .cat-right-eye {
+    position: absolute;
+    top: 54px;
+    border-radius: 60%;
+    width: 30px;
+    height: 40px;
+    background-color: #000;
 }
 
 .cat-left-eye {
-position: absolute;
-top: 54px;
-left: 39px;
-border-radius: 60%;
-transform: rotate(25deg);
-width: 30px;
-height: 40px;
-background-color: #000;
+    left: 39px;
+    transform: rotate(25deg);
 }
 
 .cat-right-eye {
-position: absolute;
-top: 54px;
-left: 134px;
-border-radius: 60%;
-transform: rotate(-25deg);
-width: 30px;
-height: 40px;
-background-color: #000;
+    left: 134px;
+    transform: rotate(-25deg);
 }
 
-/* keyframes - blinking animation */
 @keyframes blink {
-0%, 80%, 100% {
-    height: 20px;
-}
-90% {
-    height: 0;
-}
+    0%, 80%, 100% {
+        height: 20px;
+    }
+    90% {
+        height: 0;
+    }
 }
 
+.cat-left-inner-eye, .cat-right-inner-eye {
+    position: absolute;
+    top: 8px;
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 60%;
+    animation: blink 5s infinite ease-in-out;
+}
 
 .cat-left-inner-eye {
-position: absolute;
-top: 8px;
-left: 2px;
-width: 10px;
-height: 20px;
-transform: rotate(10deg);
-background-color: #fff;
-border-radius: 60%;
-animation: blink 5s infinite ease-in-out;
+    left: 2px;
+    transform: rotate(10deg);
 }
 
 .cat-right-inner-eye {
-position: absolute;
-top: 8px;
-left: 18px;
-transform: rotate(-5deg);
-width: 10px;
-height: 20px;
-background-color: #fff;
-border-radius: 60%;
-animation: blink 5s infinite ease-in-out;
+    left: 18px;
+    transform: rotate(-5deg);
 }
 
 .cat-nose {
-position: absolute;
-top: 108px;
-left: 85px;
-border-top-left-radius: 50%;
-border-bottom-right-radius: 50%;
-border-bottom-left-radius: 50%;
-transform: rotate(180deg);
-border-left: 15px solid transparent;
-border-right: 15px solid transparent;
-border-bottom: 20px solid #442c2c;
-}
+    position: absolute;
+    top: 108px;
+    left: 85px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #442c2c; /* Brown color for the nose */
+    transform: rotate(180deg); /* Makes the triangle point downwards */
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .cat-nose:hover {
+    border-bottom-color: blue;
+    transition: border-bottom-color 0.3s ease-in-out;
+  }
+
 
 .cat-mouth div {
-width: 30px;
-height: 50px;
-border: 2px solid #000;
-border-radius: 190%/190px 150px 0 0;
-border-color: black transparent transparent transparent;
+    width: 30px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 190%/190px 150px 0 0;
+    border-color: black transparent transparent transparent;
 }
 
 .cat-mouth-line-left {
-position: absolute;
-top: 88px;
-left: 74px;
-transform: rotate(170deg);
+    position: absolute;
+    top: 88px;
+    left: 74px;
+    transform: rotate(170deg);
 }
 
 .cat-mouth-line-right {
-position: absolute;
-top: 88px;
-left: 91px;
-transform: rotate(165deg);
+    position: absolute;
+    top: 88px;
+    left: 91px;
+    transform: rotate(165deg);
 }
 
-.cat-whiskers-left div {
-width: 40px;
-height: 1px;
-background-color: #000;
-}
-
-.cat-whiskers-right div {
-width: 40px;
-height: 1px;
-background-color: #000;
+.cat-whiskers-left div, .cat-whiskers-right div {
+    width: 40px;
+    height: 1px;
+    background-color: #000;
 }
 
 .cat-whisker-left-top {
-position: absolute;
-top: 120px;
-left: 52px;
-transform: rotate(10deg);
+    position: absolute;
+    top: 120px;
+    left: 52px;
+    transform: rotate(10deg);
 }
 
 .cat-whisker-left-middle {
-position: absolute;
-top: 127px;
-left: 52px;
-transform: rotate(3deg);
+    position: absolute;
+    top: 127px;
+    left: 52px;
+    transform: rotate(3deg);
 }
 
 .cat-whisker-left-bottom {
-position: absolute;
-top: 134px;
-left: 52px;
-transform: rotate(-3deg);
+    position: absolute;
+    top: 134px;
+    left: 52px;
+    transform: rotate(-3deg);
 }
 
 .cat-whisker-right-top {
-position: absolute;
-top: 120px;
-left: 109px;
-transform: rotate(-10deg);
+    position: absolute;
+    top: 120px;
+    left: 109px;
+    transform: rotate(-10deg);
 }
 
 .cat-whisker-right-middle {
-position: absolute;
-top: 127px;
-left: 109px;
-transform: rotate(-3deg);
+    position: absolute;
+    top: 127px;
+    left: 109px;
+    transform: rotate(-3deg);
 }
 
 .cat-whisker-right-bottom {
-position: absolute;
-top: 134px;
-left: 109px;
-transform: rotate(3deg);
+    position: absolute;
+    top: 134px;
+    left: 109px;
+    transform: rotate(3deg);
 }
 
 @media (max-width: 600px) {
-.cat-head {
-    width: 150px;
-    height: 130px;
-}
-
-.cat-left-ear {
-    top: -20px;
-    left: -22px;
-    border-bottom: 50px solid #5e5e5e;
-}
-.cat-right-ear {
-    top: -20px;
-    left: 122px;
-    border-bottom: 50px solid #5e5e5e;
+    .cat-head {
+        width: 150px;
+        height: 130px;
     }
-
-    .cat-left-eye,
-    .cat-right-eye {
-    width: 20px;
-    height: 30px;
-    top: 40px;
-    }
-
-    .cat-left-inner-eye,
-    .cat-right-inner-eye {
-    width: 8px;
-    height: 15px;
-    top: 6px;
-    }
-
-    .cat-nose {
-    top: 80px;
-    left: 65px;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 16px solid #442c2c;
-    }
-
-    .cat-mouth-line-left,
-    .cat-mouth-line-right {
-    top: 70px;
-    }
-
-    .cat-whiskers-left div,
-    .cat-whiskers-right div {
-    width: 30px;
-    }
-
-    .cat-whisker-left-top {
-    top: 90px;
-    left: 35px;
-    }
-
-    .cat-whisker-left-middle {
-    top: 95px;
-    left: 35px;
-    }
-
-    .cat-whisker-left-bottom {
-    top: 100px;
-    left: 35px;
-    }
-
-    .cat-whisker-right-top {
-    top: 90px;
-    left: 90px;
-    }
-
-    .cat-whisker-right-middle {
-    top: 95px;
-    left: 90px;
-    }
-
-    .cat-whisker-right-bottom {
-    top: 100px;
-    left: 90px;
-    }
+    /* Add responsive styling for smaller screens */
 }
