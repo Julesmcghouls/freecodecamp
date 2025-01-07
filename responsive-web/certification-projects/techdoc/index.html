@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pokédex Technical Documentation</title>
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav id="navbar">
+    <header>Pokédex Manual</header>
+    <a href="#Overview" class="nav-link">Overview</a>
+    <a href="#Scanning_Techniques" class="nav-link">Scanning Techniques</a>
+    <a href="#Data_Organization" class="nav-link">Data Organization</a>
+    <a href="#Evolution_Tracking" class="nav-link">Evolution Tracking</a>
+    <a href="#Advanced_Features" class="nav-link">Advanced Features</a>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main id="main-doc">
+    <section id="Overview" class="main-section">
+      <header>Overview</header>
+      <p>The Pokédex is a sophisticated device used to catalog and provide information about all known Pokémon. Created by Professor Oak, it is a must-have for trainers.</p>
+      <p>It automatically updates upon encountering or capturing new Pokémon.</p>
+      <code>pokedex.addEntry('Pikachu');</code>
+      <p>The Pokédex can display data such as species, type, abilities, and habitat.</p>
+      <p>It includes detailed descriptions and often records the Pokémon’s cry.</p>
+      <ul>
+        <li>Lightweight and portable.</li>
+        <li>Powered by advanced AI and region-specific databases.</li>
+        <li>Can sync with the trainer’s devices via wireless communication.</li>
+      </ul>
+    </section>
+
+    <section id="Scanning_Techniques" class="main-section">
+      <header>Scanning Techniques</header>
+      <p>The Pokédex uses high-tech sensors and algorithms to identify Pokémon. There are multiple scanning modes for different environments.</p>
+      <p>Basic Scan: Identifies nearby Pokémon within a 10-meter radius.</p>
+      <code>pokedex.scan('Basic');</code>
+      <p>Advanced Scan: Provides detailed information, including stats and potential moves.</p>
+      <p>Stealth Mode: Silent scanning for avoiding detection in the wild.</p>
+      <ul>
+        <li>Hold the device steady for best results.</li>
+        <li>Ensure the Pokémon is within clear view.</li>
+        <li>Special lenses are required for underwater or aerial scans.</li>
+      </ul>
+    </section>
+
+    <section id="Data_Organization" class="main-section">
+      <header>Data Organization</header>
+      <p>Data is organized by region, type, and National Dex number. Trainers can filter entries based on preferences.</p>
+      <p>The main categories include:</p>
+      <ul>
+        <li>Regional Pokédex: Displays Pokémon native to the specific region.</li>
+        <li>Type Filter: Sort Pokémon by type, e.g., Fire, Water, Electric.</li>
+        <li>Captured Status: Highlights which Pokémon have been captured or seen.</li>
+      </ul>
+      <code>pokedex.filter('Type', 'Fire');</code>
+      <p>Entries also include a capture location map and timestamp for tracking.</p>
+    </section>
+
+    <section id="Evolution_Tracking" class="main-section">
+      <header>Evolution Tracking</header>
+      <p>The Pokédex automatically tracks evolution paths for all Pokémon. It updates dynamically as Pokémon evolve.</p>
+      <p>Evolution trees display all possible stages of a Pokémon’s evolution.</p>
+      <code>pokedex.getEvolutionTree('Bulbasaur');</code>
+      <p>It highlights conditions required for evolution, such as:</p>
+      <ul>
+        <li>Level requirements.</li>
+        <li>Item usage (e.g., Thunder Stone).</li>
+        <li>Special conditions like friendship or time of day.</li>
+      </ul>
+      <p>Some regional variants have unique evolution paths, which the Pokédex identifies automatically.</p>
+    </section>
+
+    <section id="Advanced_Features" class="main-section">
+      <header>Advanced Features</header>
+      <p>Modern Pokédex models include a variety of advanced features for trainers.</p>
+      <ul>
+        <li>Real-time weather tracking to locate weather-specific Pokémon.</li>
+        <li>AR (Augmented Reality) mode for immersive Pokémon encounters.</li>
+        <li>Voice-activated commands for hands-free operation.</li>
+        <li>Integration with the Pokémon Storage System for easy management.</li>
+      </ul>
+      <code>pokedex.activate('AR_Mode');</code>
+      <p>These features are designed to enhance the training and exploration experience.</p>
+      <p>Always keep the Pokédex firmware updated to access the latest features.</p>
+    </section>
+  </main>
+</body>
+</html>
