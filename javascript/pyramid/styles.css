@@ -1,0 +1,19 @@
+/* Style for the pyramid container */
+.pyramid {
+    font-family: monospace;
+    white-space: pre; /* Preserve spaces for alignment */
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5; /* Adjust spacing between rows */
+  }
+  
+  /* Background color for the body */
+  body {
+    background-color: #f8f9fa; /* Bootstrap light background */
+  }
+  
+  /* Style for the container box */
+  .container {
+    max-width: 600px;
+  }
+  

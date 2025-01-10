@@ -11,6 +11,7 @@ function padRow(rowNumber, rowCount) {
   );
 }
 
+// Build the pyramid rows
 for (let i = 1; i <= count; i++) {
   if (inverted) {
     rows.unshift(padRow(i, count));
@@ -19,10 +20,12 @@ for (let i = 1; i <= count; i++) {
   }
 }
 
+// Combine rows into a single string
 let result = "";
 
 for (const row of rows) {
-  result = result + row + "\n";
+  result += row + "\n";
 }
 
-console.log(result);
+// Display the result in the HTML element
+document.getElementById("pyramid").textContent = result;
