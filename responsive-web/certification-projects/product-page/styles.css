@@ -1,0 +1,22 @@
+.content-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.side-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.testimonial {
+    max-width: 600px;
+
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
