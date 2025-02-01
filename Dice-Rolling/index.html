@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Die Roller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>D&D Die Roller</h1>
+        <div class="controls">
+            <input type="number" id="dice-count" min="1" value="1" placeholder="Number of dice">
+            <div class="dice-buttons">
+                <button data-die="4">Roll d4</button>
+                <button data-die="6">Roll d6</button>
+                <button data-die="8">Roll d8</button>
+                <button data-die="10">Roll d10</button>
+                <button data-die="12">Roll d12</button>
+                <button data-die="20">Roll d20</button>
+            </div>
+        </div>
+        <div class="result">
+            <p>Result: <span id="result">-</span></p>
+            <div id="dice-face">🎲</div>
+        </div>
+        <div class="history">
+            <h2>Roll History <button id="clear-history">Clear History</button></h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
